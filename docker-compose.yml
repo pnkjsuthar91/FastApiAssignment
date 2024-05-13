@@ -1,0 +1,10 @@
+version: '1.0'
+services:
+  fast_api:
+    build: .
+    ports:
+      - 8000:80
+    env_file:
+      - fast_api.env
+    volumes:
+      - ./app:/code/app
